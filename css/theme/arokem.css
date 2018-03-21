@@ -50,7 +50,6 @@ body {
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: normal;
-  text-transform: uppercase;
   text-shadow: none;
   word-wrap: break-word; }
 
@@ -202,6 +201,13 @@ body {
 
 .reveal small * {
   vertical-align: top; }
+
+.reveal .cite {
+  position: absolute; 
+  left: 600px; 
+  top: 600px;
+  font-size: 0.6em;
+}
 
 /*********************************************
  * LINKS
