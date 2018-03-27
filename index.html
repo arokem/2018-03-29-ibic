@@ -93,11 +93,13 @@
 
 	<section>
 		<img src="img/simple-backprop.png">
-			
+		<div class="cite">
+		<a href="https://www.nature.com/articles/nature14539">LeCun et al. 2015</a>
+		</div>				
 	</section>
 
 	<section>
-		<h2> Convolution networks</h2>
+		<h2> Convolutional networks</h2>
 		<p class="fragment">A way to reduce the number of parameters</p>
 		<p class="fragment">Capitalizes on spatial correlations in images</p>
 		<p class="fragment">Inspired by the mammalian visual system</p>
@@ -126,21 +128,180 @@
 	</section>
 
 	<section>
-		<h2>Feature maps</h2>
+		<div style="position: absolute; left:10px; top:10px;">
+		<img src="img/wall.png" height=250px;>
+		</div>
+		<div class="fragment" style="position: absolute; left:370px; top 10px;">
+				<img src="img/horizontal_wall.png" height=220px;>
+		</div>
+		<div class="fragment" style="position: absolute; left:650px;">
+				<img src="img/vertical_wall.png" height=220px;>
+		</div>		
+		</section>
 
-	</section>
 	<section>
-		If you want to learn more...
-		<p class="fragment"><em>come to my neural network tutorial at the <a href="http://escience.washington.edu/uw-data-science-summit/">eScience Data Science Summit!</a></em></p>
+		<img src="img/neural-network.png">
+		<div class=cite>
+			<a href="https://research.google.com/pubs/pub38115.html">Le et al. (2012)</a>
+		</div>
+	</section>
+	
+	<section>
+		<img src="img/imagenet-fig4l.png">
+		<div class=cite>
+		<a href="http://www.cs.toronto.edu/~fritz/absps/imagenet.pdf">Krizhevsky et al. 2012</a>
+		</div>
+	</section>
+
+	<section>
+		<div align=center><h4>Optical Coherence Tomography (OCT)</h4>
+			High-fidelity <em> in vivo </em> measurements of retinal structure at micron resolution
+		<div class="fragment" align="middle">
+		<image src="img/OCT.png" width="400px">
+		</div>
+		<div class="fragment" align="middle">
+		<image src="img/OCT-irf.png" width="400px">
+		</div>
+	</section>
+
+	<section>
+		<h4>The UW OCT/EMR data-base</h4>
+			<p class="fragment">
+				10 years (2006-2016)
+			<p class="fragment">
+				9,285 patients
+			<p class="fragment">
+				43,328 OCT volumes
+			<p class="fragment">
+				2.64 million OCT images
+			<p class="fragment">
+				2.5 TB of data
+			<div class="fragment" style="position: absolute; left: 600px; top: 55px;" >
+				<p class="fragment">Linked to EPIC electronic medical records
+				<p class="fragment"> For each OCT we know:
+					<small>
+					<p class="fragment"> Visual acuity
+					<p class="fragment"> OCT interpretation
+					<p class="fragment"> Diagnosis
+					<p class="fragment"> Treatment determinations
+					<p class="fragment"> In some cases - longitudinal measurements
+					</small>
+	</section>
+
+	<section>
+		<img src="img/amd-vgg16-results.png">
+		<div class=cite>
+			<a href="">Lee et al. (2016)</a>
+		</div>
+	</section>
+
+
+	<section>
+			<h4><div align="center">Is there a ball in the picture?</div></h4>
+			<image src="img/dog-with-ball.png" height="400px">
+			<div class=cite>
+				><a href="https://arxiv.org/pdf/1311.2901.pdf">Zeiler and Fergus (2013)</a>
+			</div>
+	</section>
+
+	<section>
+		<h4><div align="center">How about now?</div></h4>
+		<image src="img/dog-with-ball-occluder-corner.png" height="400px">
+		<div class=cite>
+				><a href="https://arxiv.org/pdf/1311.2901.pdf">Zeiler and Fergus (2013)</a>
+			</div>
+	</section>
+
+	<section>
+		<h4><div align="center">And now?</div></h4>
+	<image src="img/dog-with-ball-occluder-center.png" height="400px">
+
+	<div class=cite>
+		<a href="https://arxiv.org/pdf/1311.2901.pdf">Zeiler and Fergus (2013)</a>
+	</div>
+	</section>
+
+	<section>
+		<h4><div align="center">Deep learning network identifies clinical features</div></h4>
+		<image src="./img/amd-vgg16-occlusion.png" height="500px">
+		<div class=cite>
+		<a href="">Lee et al. (2016)</a>
+		</div>
+	</section>
+
+	<section>
+			<h2>Fully convolutional networks</h2>
+			Take an image as input and produce an image as output
+		</section>
+	
+	<section>
+		<img src="img/unet-architecture.png">
+		<div class=cite>
+			<a href="https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/">Ronneberger et al. 2015</a>
+		</div>
+	</section>
+	
+	<section>
+		<h4><div align="center">Intraretinal fluid segmentation</div></h4>
+		<image src="./img/unet-segmentation-1.png" height="500px">
+			<div style="position: absolute; left: 700px; top: 620px" >
+				<small><a href="">Lee et al. (2016)</a>
+				</small>
+			</div>
+	</section>
+
+	<section>
+		<h4><div align="center">Intraretinal fluid segmentation</div></h4>
+		<image src="./img/unet-segmentation-2.png" height="500px">
+			<div style="position: absolute; left: 700px; top: 620px" >
+				<small><a href="">Lee et al. (2016)</a>
+				</small>
+			</div>
+	</section>
+
+	<section>
+		<h4><div align="center">Intraretinal fluid segmentation</div></h4>
+		<image src="./img/unet-vs-humans.png" height="500px">
+			<div style="position:absolute; left:580px;top:70px">
+				<image src="./img/white-square.png" height="500px">
+			</div>
+			<div style="position: absolute; left: 700px; top: 620px" >
+				<small><a href="">Lee et al. (2016)</a>
+				</small>
+			</div>
+	</section>
+
+	<section>
+		<h4><div align="center">Intraretinal fluid segmentation</div></h4>
+		<image src="./img/unet-vs-humans.png" height="500px">
+			<div style="position: absolute; left: 700px; top: 620px" >
+				<small><a href="">Lee et al. (2016)</a>
+				</small>
+			</div>
+	</section>
+
+
+	<section>
+	<img src="img/UNET.png">
+	</section>
+
+	<section>
+		<img src="img/cGAN.png">
 	</section>
 
 	<section>
 
-		Jack Van Horn talk	
-		April 11th
+	<img src="img/UNET_perceptual_loss.png">
+				
+	</section>
+		
+
+	<section>
+		<h2>Of interest</h2>
+		Jack Van Horn talk, April 11th, 2:30 PM. 
+		Physics Auditorium
 
 	</section>
-
 
 	<section>
 			
@@ -179,6 +340,12 @@
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
 				history: true,
+				controls: false,
+				progress: true,
+				center: true,
+
+				transition: 'fade', // none/fade/slide/convex/concave/zoom
+
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
