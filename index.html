@@ -29,8 +29,8 @@
 	<section>
 		<img src="img/eScience.png" height="100px" alt="eScience logo" align="middle">
 
-		<h2> Fully convolutional neural networks</h2>
-		<h4><div align=middle> and their application in biomedical image processing </div></h4>
+		<h2> Cross-model image synthesis </h2>
+		<h4><div align=middle> with fully convolutional neural networks </div></h4>
 
 		<br>
 		<p><a href="http://arokem.org">Ariel Rokem</a>,
@@ -166,7 +166,8 @@
 
 	<section>
 		<h4>The UW OCT/EMR data-base</h4>
-			<p class="fragment">
+		<div class="fragment" style="position: absolute; left: 10px; top: 55px;" >
+				<p class="fragment">
 				10 years (2006-2016)
 			<p class="fragment">
 				9,285 patients
@@ -176,20 +177,23 @@
 				2.64 million OCT images
 			<p class="fragment">
 				2.5 TB of data
-			<div class="fragment" style="position: absolute; left: 600px; top: 55px;" >
-				<p class="fragment">Linked to EPIC electronic medical records
-				<p class="fragment"> For each OCT we know:
-					<small>
-					<p class="fragment"> Visual acuity
-					<p class="fragment"> OCT interpretation
-					<p class="fragment"> Diagnosis
-					<p class="fragment"> Treatment determinations
-					<p class="fragment"> In some cases - longitudinal measurements
-					</small>
+		</div>
+		<div style="position: absolute; left: 400px; top: 55px;" >
+			<p class="fragment">Linked to EPIC electronic medical records
+			<p class="fragment"> For each OCT we know:
+				<small>
+				<p class="fragment"> Visual acuity
+				<p class="fragment"> OCT interpretation
+				<p class="fragment"> Diagnosis
+				<p class="fragment"> Treatment determinations
+				<p class="fragment"> In some cases - longitudinal measurements
+				</small>
+			</div>
 	</section>
 
 	<section>
-		<img src="img/amd-vgg16-results.png">
+		<h4>Deep learning is effective for the classification of OCT images of normal versus Age-related Macular Degeneration </h4>
+		<img src="img/amd-vgg16-results.png" height=400px>
 		<div class=cite>
 			<a href="">Lee et al. (2016)</a>
 		</div>
@@ -235,7 +239,7 @@
 		</section>
 	
 	<section>
-		<img src="img/unet-architecture.png">
+		<img src="img/unet-architecture.png" height=500px>
 		<div class=cite>
 			<a href="https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/">Ronneberger et al. 2015</a>
 		</div>
@@ -282,7 +286,29 @@
 
 
 	<section>
+		<h4>U-net based image synthesis</h4>
 	<img src="img/UNET.png">
+	</section>
+
+	<section>
+		<h4>OCT => OCTA </h4>
+		<img src="img/oct2octa.png" height=500px>
+		<div class=cite>
+			<a href="https://www.biorxiv.org/content/early/2018/02/25/271346">Lee et al. (2018)</a>
+		</div>
+	</section>
+	<section>
+		<h4>OCT => OCTA </h4>
+		<img src="img/oct2octa_cues.png">
+		<div class=cite>
+			<a href="https://www.biorxiv.org/content/early/2018/02/25/271346">Lee et al. (2018)</a>
+		</div>	
+	</section>
+
+	<section>
+		<h4>MRI => MRI </h4>
+		
+
 	</section>
 
 	<section>
@@ -290,11 +316,31 @@
 	</section>
 
 	<section>
-
-	<img src="img/UNET_perceptual_loss.png">
-				
+	<img src="img/UNET_perceptual_loss.png">	
 	</section>
 		
+
+	<section>
+		<video width="800" autoplay loop>
+			<source src="./img/colorfa.mov">
+		</video>
+
+	</section>
+
+	<section>
+		<video width="800" autoplay loop>
+			<source src="./img/fa.mov">
+		</video>
+
+	</section>
+
+	<section>
+		<video width="800" autoplay loop>
+			<source src="./img/ang_error.mov">
+		</video>
+
+	</section>
+
 
 	<section>
 		<h2>Of interest</h2>
